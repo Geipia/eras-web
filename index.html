@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créateur d'Eraz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Créateur d'Eraz</h1>
+
+        <label for="erazIdInput">Entrez l'ID de l'Eraz (multiple de 751953751953):</label>
+        <input type="number" id="erazIdInput">
+        <button onclick="createEraz()">Créer Eraz</button>
+
+        <h2>IDs des Eraz minés</h2>
+        <textarea id="minedIds" readonly></textarea>
+
+        <h2>Historique de la Blockchain</h2>
+        <textarea id="blockchainHistory" readonly></textarea>
+
+        <h2>Transactions du Bloc Sélectionné</h2>
+        <input type="number" id="erazViewInput" placeholder="Entrez l'ID de l'Eraz">
+        <button onclick="viewTransactions()">Voir Transactions</button>
+        <textarea id="transactionsHistory" readonly></textarea>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
